@@ -13,11 +13,11 @@ const TaskList = () => {
   },[task, filter])
 
   const onToggle = useCallback((taskId)=>{
-    dispatch({ type: 'TOGGLE', payload: item.id })
+    dispatch({ type: 'TOGGLE', payload: taskId })
   },[dispatch])
 
   const onDelete = useCallback((taskId)=>{
-    dispatch({ type: 'DELETE', payload: item.id })
+    dispatch({ type: 'DELETE', payload: taskId })
   },[dispatch])
 
   return (

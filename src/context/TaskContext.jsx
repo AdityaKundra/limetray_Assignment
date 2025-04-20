@@ -13,7 +13,7 @@ const reducer = (state, action)=>{
               );
         case 'DELETE':
             return state.filter(task=>(
-                task.id !== payload
+                task.id !== action.payload
             ))
         default:
             return state;
