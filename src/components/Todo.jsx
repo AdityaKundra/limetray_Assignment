@@ -19,7 +19,7 @@ const Todo = () => {
       </div>
       <button
           onClick={() => setDarkMode(!darkMode)}
-          className="absolute right-10 bottom-10 p-2 rounded-full bg-black dark:bg-white text-white dark:text-black w-10 h-10 text-xs cursor-pointer"
+          className="fixed right-10 bottom-10 p-2 shadow rounded-full bg-black dark:bg-white text-white dark:text-black w-10 h-10 text-xs cursor-pointer"
         >
           {!darkMode ? 'DRK' : 'LHT'}
         </button>

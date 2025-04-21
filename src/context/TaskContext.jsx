@@ -15,6 +15,8 @@ const reducer = (state, action)=>{
             return state.filter(task=>(
                 task.id !== action.payload
             ))
+        case 'REORDER':
+            return action.payload;    
         default:
             return state;
     }
